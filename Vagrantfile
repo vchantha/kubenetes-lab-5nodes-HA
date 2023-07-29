@@ -13,8 +13,8 @@ config.vm.boot_timeout = 6000
 config.vm.provision "shell", inline: <<-SHELL
 echo "===> start password ROOT ... <==="
 cat <<EOF | sudo passwd root
-chantha_007
-chantha_007
+bigdata
+bigdata
 EOF
 sudo chmod 777 /etc/ssh/sshd_config
 sudo sed -i 's/#PasswordAuthentication yes/PasswordAuthentication yes/' /etc/ssh/sshd_config
